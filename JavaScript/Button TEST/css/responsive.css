@@ -1,0 +1,30 @@
+/* ------------------------- *\
+        RESPONSIBLE
+\* ------------------------- */
+/*-----------
+    computer-r
+---------- */
+@media screen and (max-width: 1200px) {
+    #wrapper{
+        width: 100%;
+        transition: .2s ease-in-out;
+    }
+}
+/*-----------
+    tablet
+---------- */
+@media screen and (max-width: 992px) {
+    #wrapper{
+        width: 100%;
+        transition: .2s ease-in-out;
+    }
+}
+/*-----------
+    mobile
+---------- */
+@media only screen and (min-width: 0px) and (max-width : 480px) {
+    #wrapper{
+        width: 100%;
+        transition: .2s ease-in-out;
+    }
+}
