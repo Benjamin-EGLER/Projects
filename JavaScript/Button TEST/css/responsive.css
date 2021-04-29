@@ -2,12 +2,11 @@
         RESPONSIBLE
 \* ------------------------- */
 /*-----------
-    computer-r
+    computer-min
 ---------- */
 @media screen and (max-width: 1200px) {
     #wrapper{
         width: 100%;
-        transition: .2s ease-in-out;
     }
 }
 /*-----------
@@ -16,7 +15,6 @@
 @media screen and (max-width: 992px) {
     #wrapper{
         width: 100%;
-        transition: .2s ease-in-out;
     }
 }
 /*-----------
@@ -25,6 +23,5 @@
 @media only screen and (min-width: 0px) and (max-width : 480px) {
     #wrapper{
         width: 100%;
-        transition: .2s ease-in-out;
     }
 }
