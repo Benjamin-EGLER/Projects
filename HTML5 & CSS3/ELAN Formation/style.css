@@ -8,6 +8,9 @@
     font-family: 'Exo', sans-serif;
     font-weight: 400;
 }
+body{
+    background-color: #fff;
+}
 h2{
     font-weight: 600;
     font-size: 1.22em;
@@ -20,15 +23,16 @@ img{
     height: 0 auto;
     vertical-align: top;
 }
-body{
-    background-color: #fff;
-}
+
+/* body */
 #wrapper{
     width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
 }
+
+/* header */
 header nav{
     display: flex;
     flex-direction: row;
@@ -110,6 +114,8 @@ header #h_img div{
 header figcaption p{
     font-size: 1.43em;
 }
+
+/* main */
 main{
     display: flex;
     flex-direction: column;
@@ -127,6 +133,8 @@ section{
 section h2{
     margin-bottom: 1em;
 }
+
+/* training */
 #training{
     padding-bottom: 3%;
 }
@@ -157,6 +165,8 @@ section h2{
     padding: 0.6em 0;
     border: 1px solid rgb(128, 128, 128);
 }
+
+/* team */
 #avatar{
     display: flex;
     flex-wrap: wrap;
@@ -190,6 +200,8 @@ section h2{
     font-size: 0.9em;
     color: #fff;
 }
+
+/* contact */
 form, fieldset{
     display: flex;
     flex-direction: column;
@@ -215,6 +227,8 @@ input.send{
     background-color: rgb(255, 165, 0);
     color: #fff;
 }
+
+/* footer */
 footer{
     padding: 0.8em 0;
     background-color: rgb(81, 81, 81);
@@ -230,6 +244,7 @@ footer a{
     color: #fff;
 }
 
+/* RESPONSIVE */
 /* for tablet */
 @media screen and (min-width: 481px) and (max-width: 992px) {
     header nav{
