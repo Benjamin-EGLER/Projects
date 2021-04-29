@@ -21,7 +21,6 @@
 }
 body{
     /* background: linear-gradient(70deg, rgb(137, 20, 36), 50%, rgb(41, 31, 114)); */
-    /* background-color: rgb(0, 0, 0, 0.6); */
 }
 h1, p, span, strong{
     font-weight: 600;
@@ -38,6 +37,7 @@ h1, p, span, strong{
     background: linear-gradient(70deg, rgb(41, 31, 114), 50%, rgb(137, 20, 36));
     transition: .2s ease-in-out;
 }
+
 /*-----------
     HEADER
 ---------- */
