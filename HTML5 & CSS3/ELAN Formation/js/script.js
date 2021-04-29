@@ -5,6 +5,5 @@
 
 /* BURGER */
 $("#burger").click(function(){
-    // $("#menu").slideToggle(300);
     $("#menu").toggleClass('burger');
 });
