@@ -1,0 +1,50 @@
+/*-----------
+    THEME
+---------- */
+/* Base */
+.t-base{
+    background-color: rgb(100, 29, 151) !important;
+    transition: .2s ease-in-out;
+}
+.t-base a{
+    color: #fff !important;
+}
+.t-base a:hover{
+    border-bottom: 3px solid rgb(255, 255, 255, 1) !important;
+    color: #fff !important;
+}
+
+/* Light */
+.t-light{
+    background-color: #fff !important;
+    transition: .2s ease-in-out;
+}
+.t-light a{
+    color: #000 !important;
+}
+.t-light a:hover{
+    border-bottom: 3px solid rgb(0, 0, 0, 1) !important;
+    color: #000 !important;
+}
+
+/* Dark */
+.t-dark{
+    background-color: #000 !important;
+    transition: .2s ease-in-out;
+}
+.t-dark a{
+    color: #fff !important;
+}
+.t-dark a:hover{
+    border-bottom: 3px solid rgb(255, 255, 255, 1) !important;
+    color: #fff !important;
+}
+
+
+/* test */
+.autreTheme{
+    background: linear-gradient(70deg, rgb(20, 137, 73), 50%, rgb(41, 114, 31));
+}
+.testTheme{
+    background: linear-gradient(70deg, rgb(137, 90, 20), 50%, rgb(114, 37, 31));
+}
