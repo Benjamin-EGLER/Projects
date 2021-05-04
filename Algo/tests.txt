@@ -1,0 +1,104 @@
+author: ("Benjamin EGLER");
+
+Algorithme - Tests
+
+
+Test n°1
+Variable nb en entier
+
+Début
+    Ecire "Donnez moi un nombre"
+    Lire nb
+    Si nb > 0 Alors
+        Ecrire "Le nombre donné est positif"
+        Sinon
+            Ecrire "Le nombre donné est négatif"
+    FinSi
+Fin
+
+
+Test n°2
+Variables nb1, nb2 en entier
+
+Début
+    Ecrire "Donnez un nombre"
+    Lire nb1
+    Ecrire "Donnez un deuxième nombre"
+    Lire nb2
+    Si (nb1 > 0 ET nb2 > 0 ) ou (nb1 < 0 ET nb2 < 0) Alors
+        Ecrire "La valeur des deux nombres est positive"
+        Sinon
+            Ecrire "La valeur des deux nombres est négative"
+    FinSi
+Fin
+
+
+Test n°3
+Variables mot1, mot2, mot3 en string
+
+Début
+    Ecrire "Ecrivez un mot"
+    Lire mot1
+    Ecrire "Ecrivez un deuxième mot"
+    Lire mot2
+    Ecrire "Ecrivez un troisième mot"
+    Lire mot3
+    Si mot1 < mot2 et mot2 < mot3  Alors
+        Ecrire "Les mots sont dans l'ordre alphabétique"
+        Sinon
+            Ecrire "Les mots ne sont pas dans l'ordre alphabétique"
+    FinSi
+Fin
+
+
+Test n°4
+Variable nb en entier
+
+Début
+    Ecrire "Donnez un nombre"
+    Lire nb
+    Si nb > 0 Alors
+        Ecrire "Le nombre donné est positif"
+        SinonSi nb = 0 Alors
+            Ecrire "Le nombre donné est nul"
+        Sinon
+            Ecrire "Le nombre donné est négatif"
+    FinSi
+Fin
+
+
+Test n°5
+Variables nb1, nb2 en entier
+
+Début
+    Ecrire "Donnez un nombre"
+    Lire nb1
+    Ecrire "Donnez un deuxième nombre"
+    Lire nb2
+    Si (nb1 > 0 et nb2 > 0 ) ou (nb1 < 0 et nb2 < 0) Alors
+        Ecrire "La valeur des deux nombres est positive"
+        SinonSi nb1 = 0 ou nb2 = 0 Alors
+            Ecrire "La valeur des deux nombres est nul"
+        Sinon
+           Ecrire "La valeur des deux nombres est négative"
+    FinSi
+Fin
+
+
+Test n°6
+Variable age en entier
+
+Début
+    Ecrire "Donnez votre age"
+    Si age >= 12 Alors
+        Ecrire "Vous êtes cadet"
+        SinonSi age >= 10 Alors
+            Ecrire "Vous êtes minimine"
+        SinonSi age >= 8 Alors
+            Ecrire "Vous êtes pupille"
+        SinonSi age >= 6 Alors
+            Ecrire "Vous êtes poussin"
+        Sinon
+            Ecrire "Catégorie non prise en compte !"
+    FinSi
+Fin

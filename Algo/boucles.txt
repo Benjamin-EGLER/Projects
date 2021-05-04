@@ -1,0 +1,234 @@
+author: ("Benjamin EGLER");
+
+Algorithme - Boucles
+
+Les objectifs de ces exercices sont les suivants :
+    • Comprendre la notion de boucles à l'aide d'exercices d'algorithmes.
+    • Maîtriser le logiciel "Algobox" pour informatiser les algorithmes.
+
+
+I. Exercices
+
+
+1) Exercice 1
+Ecrire un algorithme qui demande à l’utilisateur un nombre compris entre 1 et 3 jusqu’à ce que la réponse convienne.
+
+Variable nb en entier
+
+Début
+    nb ← 0
+    Ecire "Donnez un nombre entre 1 et 3"
+    Lire nb
+    Tantque nb <1 ou >3
+        Si nb <0 ou nb >3 Alors
+            Ecrire "Le nombre n'est pas compris entre 1 et 3"
+            SinonSi nb >0 ou nb <4
+                Ecrire "Votre nombre est bien compris entre 1 et 3"
+            FinSinonSi
+        FinSi
+    FinTantque
+Fin
+
+
+2) Exercice 2
+Ecrire un algorithme qui demande un nombre compris entre 10 et 20, jusqu’à ce que la réponse convienne. En cas de réponse supérieure à 20, on fera apparaître un message : « Plus petit ! », et inversement, « Plus grand ! » si le nombre est inférieur à 10.
+
+Variable nb en entier
+
+Début
+    nb ← 0
+    Ecire "Donnez un nombre entre 10 et 20"
+    Lire nb
+    Tantque nb <10 ou >20
+        Si nb <10 Alors
+            Ecrire "Plus grand !"
+            SinonSi nb >20
+                Ecrire "Plus petit !"
+            FinSinonSi
+        FinSi
+    FinTantque
+Fin
+
+
+3) Exercice 3
+Ecrire un algorithme qui demande un nombre de départ, et qui ensuite affiche les dix nombres suivants. Par exemple, si l'utilisateur entre le nombre 17, le programme affichera les nombres de 18 à 27.
+
+Méthode n°1
+Variable nb, limite en numérique
+
+Début
+    nb ← 0
+    Ecire "Ecrire un nombre"
+    Lire nb
+    limite ← nb + 10
+    Ecrire "Voici les 10 nombres supérieures à votre nombre de départ " nb " !"
+    Tantque nb < limite
+        nb ← nb + 1
+        Ecrire nb
+    FinTantque
+Fin
+
+Méthode n°2
+Variable nb, i en entier
+
+Début
+    Ecire "Ecrire un nombre"
+    Lire nb
+    i ← 0
+    Ecrire "Voici les 10 nombres supérieures à votre nombre de départ " nb " !"
+    Tantque i < 10
+        i ← i + 1
+        Ecrire nb + i
+    FinTantque
+Fin
+
+Méthode n°3 (simple)
+Variable nb, i en entier
+
+Début
+    Ecire "Ecrire un nombre"
+    Lire nb
+    Pour i ← 1 à 10
+        Ecrire nb + i
+        i Suivant
+Fin
+
+
+4) Exercice 4
+Ecrire un algorithme qui demande un nombre de départ, et qui ensuite écrit la table de multiplication de ce nombre, présentée comme suit (cas où l'utilisateur entre le nombre 7) :
+
+Table de 7 :
+7 x 1 = 7
+7 x 2 = 14
+7 x 3 = 21
+…
+7 x 10 = 70
+
+Méthode n°1
+Variable nb, i en entier
+
+Début
+    Ecire "Ecrire un nombre"
+    Lire nb
+    i ← 0
+    Ecrire "Voici la table de multiplication de votre nombre de départ " nb " !"
+    Tantque i < 10
+        i ← i + 1
+        Ecrire nb "x" i "=" nb*i
+    FinTantque
+Fin
+
+Méthode n°2 (simple)
+Variable nb, i en entier
+
+Début
+    Ecire "Ecrire un nombre"
+    Lire nb
+    Ecrire "Voici la table de multiplication de votre nombre de départ " nb " !"
+    Pour i ← 1 à 10
+        Ecrire nb "x" i "=" nb*i
+        i Suivant
+Fin
+
+
+5) Exercice 5
+Ecrire un algorithme qui demande un nombre de départ, et qui calcule la somme des entiers jusqu’à ce nombre. Par exemple, si l’on entre 5, le programme doit calculer :
+1 + 2 + 3 + 4 + 5 = 15
+NB : on souhaite afficher uniquement le résultat, pas la décomposition du calcul.
+
+Méthode n°1
+Variable nb, i, somme en entier
+
+Début
+    Ecire "Ecrire un nombre"
+    Lire nb
+    somme ← 0
+    Ecrire "Voici la somme des entiers jusqu’à ce nombre de départ " nb " !"
+    Pour i ← 1 à nb
+        Ecrire somme ← somme + i
+        i Suivant
+    Ecrire "La somme est : " somme
+Fin
+
+
+6) Exercice 6
+Ecrire un algorithme qui demande un nombre de départ, et qui calcule sa factorielle.
+NB : la factorielle de 8, notée 8 !, vaut
+1 x 2 x 3 x 4 x 5 x 6 x 7 x 8
+
+Méthode n°1
+Variable nb, i, factorielle en entier
+
+Début
+    Ecire "Ecrire un nombre"
+    Lire nb
+    factorielle ← 1
+    Ecrire "Voici la factorielle du nombre de départ " nb " !"
+    Pour i ← 2 à nb
+        factorielle ← factorielle * i
+        i Suivant
+    Ecrire "La factorielle est : " factorielle
+Fin
+
+
+7) Exercice 7
+Ecrire un algorithme qui demande successivement 20 nombres à l’utilisateur, et qui lui dise ensuite quel était le plus grand parmi ces 20 nombres :
+Entrez le nombre numéro 1 : 12
+Entrez le nombre numéro 2 : 14
+etc.
+Entrez le nombre numéro 20 : 6
+Le plus grand de ces nombres est : 14
+Modifiez ensuite l’algorithme pour que le programme affiche de surcroît en quelle position avait été saisie ce nombre :
+C’était le nombre numéro 2
+
+Méthode n°1
+Variable nb, i, nbg en entier
+
+Début
+    nbg ← 0
+    Ecire "Ecrire 20 nombres successivement"
+    Pour i ← 1 à 20
+        Ecire "Ecrire un nombre"
+        Lire nb
+        Si i = 1 ou nb > nbg Alors
+            nbg ← nb
+        FinSi
+        i Suivant
+        Ecrire "Voici le nombre le plus grand : " nbg
+Fin
+
+Exercice 7 bis
+Variable nb, i, nbg, pstI en entier
+
+Début
+    nbg ← 0
+    Ecire "Ecrire 20 nombres successivement"
+    Pour i ← 1 à 20
+        Ecire "Ecrire un nombre"
+        Lire nb
+        Si i = 1 ou nb > nbg Alors
+            nbg ← nb
+            pstI ← i
+        FinSi
+        i Suivant
+        Ecrire "Voici le nombre le plus grand : " nbg " et sa position est : " pstI
+Fin
+
+
+8) Exercice 8
+Réécrire l’algorithme précédent, mais cette fois-ci on ne connaît pas d’avance combien l’utilisateur souhaite saisir de nombres. La saisie des nombres s’arrête lorsque l’utilisateur entre un zéro.
+
+
+9) Exercice 9
+Lire la suite des prix (en euros entiers et terminée par zéro) des achats d’un client. Calculer la somme qu’il doit, lire la somme qu’il paye, et simuler la remise de la monnaie en affichant les textes "10 Euros", "5 Euros" et "1 Euro" autant de fois qu’il y a de coupures de chaque sorte à rendre.
+
+
+10) Exercice 10
+Écrire un algorithme qui permette de connaître ses chances de gagner au tiercé, quarté, quinté et autres impôts volontaires.
+On demande à l’utilisateur le nombre de chevaux partants, et le nombre de chevaux joués. Les deux messages affichés devront être :
+Dans l’ordre : une chance sur X de gagner
+Dans le désordre : une chance sur Y de gagner
+X et Y nous sont donnés par la formule suivante, si n est le nombre de chevaux partants et p le nombre de chevaux joués (on rappelle que le signe ! signifie "factorielle", comme dans l'exercice 5.6 ci-dessus) :
+X = n ! / (n - p) !
+Y = n ! / (p ! * (n – p) !)
+NB : cet algorithme peut être écrit d’une manière simple, mais relativement peu performante. Ses performances peuvent être singulièrement augmentées par une petite astuce. Vous commencerez par écrire la manière la plus
